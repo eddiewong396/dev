@@ -1,6 +1,6 @@
 <?php
 
-    // require('../vendor/autoload.php');
+    require('../vendor/autoload.php');
     // load up your config file
     require_once("/resources/config.php");
      
