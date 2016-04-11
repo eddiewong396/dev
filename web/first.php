@@ -17,10 +17,10 @@
                     echo "My first try from norizman";
                 ?>
             </div>
-        </div>div>
+        </div>
 
         <div id="footer">
-            Footer
+            Footer...
         </div>
     </body>
 </html>
