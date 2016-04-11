@@ -1,11 +1,11 @@
 <?php
 
-    require('../vendor/autoload.php');
+    // require('../vendor/autoload.php');
     // load up your config file
     require_once("/resources/config.php");
      
-    include_once("/views/header.html");
-    include_once("/views/nav.html");
+    require_once(TEMPLATES_PATH . "/views/header.html");
+    require_once(TEMPLATES_PATH . "/views/nav.html");
 ?>
 <div id="container">
     <div id="content">
