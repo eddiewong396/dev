@@ -7,7 +7,8 @@
     if something changes such as your database credentials, or a path to a specific resource,
     you'll only need to update it here.
 */
- 
+
+/*
 $config = array(
     "db" => array(
         "db1" => array(
@@ -34,6 +35,7 @@ $config = array(
         )
     )
 );
+*/
  
 /*
     I will usually place the following in a bootstrap file or some type of environment
