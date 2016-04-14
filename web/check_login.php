@@ -4,7 +4,7 @@ $username="uksylksjjezsif"; // Mysql username
 $password="hs_6PoyzBubhGXxupSatyHxjGp"; // Mysql password
 $db_name="d4at4d6tbtto79"; // Database name
 $tbl_name="test"; // Table name
-
+echo("test");
 // Connect to server and select database.
 mysql_connect("$host", "$username", "$password")or
 die("cannot connect");
