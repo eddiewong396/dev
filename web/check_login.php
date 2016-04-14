@@ -6,7 +6,7 @@
     $tbl_name="test"; // Table name
 
     // Connect to server and select database.
-    $conn = mysql_connect("$host", "$username", "$password") or die("cannot connect");
+    $conn = mysqli("$host", "$username", "$password") or die("cannot connect");
     mysql_select_db("$db_name")or die("cannot select DB");
  
     // username and password sent from form
