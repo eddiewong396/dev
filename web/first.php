@@ -15,6 +15,7 @@
             <div id="content">
                 <?php
                     echo "My first try from norizman";
+                   
                 ?>
             </div>
         </div>

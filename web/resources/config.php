@@ -8,24 +8,17 @@
     you'll only need to update it here.
 */
 
-/*
 $config = array(
     "db" => array(
         "db1" => array(
-            "dbname" => "database1",
-            "username" => "dbUser",
-            "password" => "pa$$",
-            "host" => "localhost"
-        ),
-        "db2" => array(
-            "dbname" => "database2",
-            "username" => "dbUser",
-            "password" => "pa$$",
-            "host" => "localhost"
+            "dbname" => "d4at4d6tbtto79",
+            "username" => "uksylksjjezsif",
+            "password" => "hs_6PoyzBubhGXxupSatyHxjGp",
+            "host" => "ec2-23-21-255-14.compute-1.amazonaws.com"
         )
     ),
     "urls" => array(
-        "baseUrl" => "http://example.com"
+        "baseUrl" => "http://devbn.herokuapp.com"
     ),
     "paths" => array(
         "resources" => "/resources",
@@ -35,7 +28,6 @@ $config = array(
         )
     )
 );
-*/
  
 /*
     I will usually place the following in a bootstrap file or some type of environment
