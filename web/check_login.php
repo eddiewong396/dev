@@ -4,28 +4,14 @@ $username="uksylksjjezsif"; // Mysql username
 $password="hs_6PoyzBubhGXxupSatyHxjGp"; // Mysql password
 $db_name="d4at4d6tbtto79"; // Database name
 $tbl_name="test"; // Table name
-echo("test");
+
 // Connect to server and select database.
-mysql_connect("$host", "$username", "$password")or
-die("cannot connect");
-mysql_select_db("$db_name")or die("cannot select DB");
-
-// username and password sent from form
-$myusername=$_POST['myusername'];
-$mypassword=$_POST['mypassword'];
-
-// To protect MySQL injection (more detail about MySQL injection)
-$myusername = stripslashes($myusername);
-$mypassword = stripslashes($mypassword);
-$myusername = mysql_real_escape_string($myusername);
-$mypassword = mysql_real_escape_string($mypassword);
-
-if($count==1){
-session_register("myusername");
-session_register("mypassword");
-header("location:login_success.php");
+$link = mysql_connect("$host", "$username", "$password")
+if (!$link) {
+echo "<p>Could not connect to the server '" . $host . "'</p>\n";
+echo mysql_error();
+} else {
+echo "<p>Successfully connected to the server '" . $host . "'</p>\n";
 }
-else {
-echo "Wrong Username or Password";
-}
+
 ?>
