@@ -10,8 +10,8 @@
     mysql_select_db("$db_name")or die("cannot select DB");
  
     // username and password sent from form
-    $myusername=$_POST['myusername'];
-    $mypassword=$_POST['mypassword'];
+    $myusername=$_POST["myusername"];
+    $mypassword=$_POST["mypassword"];
 
     // To protect MySQL injection (more detail about MySQL injection)
     $myusername = stripslashes($myusername);
