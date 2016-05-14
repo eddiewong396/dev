@@ -1,25 +1,20 @@
 <?php
 
-require('../vendor/autoload.php');
-
-$app = new Silex\Application();
-$app['debug'] = true;
-
-// Register the monolog logging service
-$app->register(new Silex\Provider\MonologServiceProvider(), array(
-  'monolog.logfile' => 'php://stderr',
-));
-
-// Register view rendering
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
-));
-
-// Our web handlers
-
-$app->get('/', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig');
-});
-
-$app->run();
+    require('../vendor/autoload.php');
+    // load up your config file
+    require_once("/resources/config.php");
+     
+    require_once(TEMPLATES_PATH . "/views/header.html");
+    require_once(TEMPLATES_PATH . "/views/nav.html");
+?>
+<div id="container">
+    <div id="content">
+        <!-- content -->
+    </div>
+    <?php
+        require_once(TEMPLATES_PATH . "/views/rightPanel.php");
+    ?>
+</div>
+<?php
+    require_once(TEMPLATES_PATH . "/views/footer.php");
+?>
